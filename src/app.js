@@ -19,7 +19,7 @@ async function start () {
         console.log(time)
 
         /* время не прошло, останавливаемся */
-        //if (time < config.out.hour) return
+        if (time < config.out.hour) return
 
         console.log('Время прошло много, могу выложить')
 
