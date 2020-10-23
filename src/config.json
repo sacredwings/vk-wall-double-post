@@ -1,0 +1,16 @@
+{
+  "token": "cd3d63252c357b27c162cb36d1ff350dcb5ea43e3fa130317d68e4768860f8f50be510df6d5498ece148d",
+  "in": {
+    "owner_id": -199530275,
+    "count": 3,
+    "filter": "all"
+  },
+  "out": {
+    "owner_ids":[
+      -59673326
+    ],
+    "friends_only": 0,
+    "from_group": 1,
+    "hour": 12
+  }
+}
