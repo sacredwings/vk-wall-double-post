@@ -19,7 +19,7 @@ async function start () {
         console.log(time)
 
         /* время не прошло, останавливаемся */
-        if (time < config.out.hour) return
+        //if (time < config.out.hour) return
 
         console.log('Время прошло много, могу выложить')
 
@@ -121,6 +121,7 @@ class vk {
             console.log(time)
             setTimeout(async () => {
                 let url = `https://api.vk.com/method/wall.post?owner_id=${out}&friends_only=${config.out.friends_only}&from_group=${config.out.from_group}&message=${newPost.text}&attachments=${newPost.attachments}&access_token=${config.token}&v=5.103`;
+                console.log(out)
                 console.log(url)
 
                 //добавляем пост новостей
@@ -129,9 +130,10 @@ class vk {
                     url: url,
                     headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 YaBrowser/19.12.4.25 Yowser/2.5 Safari/537.36"},
                 });
+
             }, time);
 
-            time =5000;
+            time +=5000;
         }
 
     }
